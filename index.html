@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruthCon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: rgb(0, 74, 173);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: lightseagreen;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        main {
+            padding: 2rem;
+            background-color: #fff;
+            margin: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        main.active {
+            display: block;
+        }
+
+        main h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        main ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        main li {
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: rgb(0, 74, 173);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        footer p a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 0.3rem;
+        }
+
+        footer p a:hover {
+            text-decoration: underline;
+        }
+		.timeline {
+  			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.bar {
+			width: 2px;
+			height: 100%;
+			background-color: #ccc;
+			margin: 0 20px;
+		}
+
+		.column {
+			flex: 1;
+			padding: 20px;
+		}
+
+		ol {
+			list-style-type: decimal;
+			margin-bottom: 0;
+		}
+
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+			margin-top: 0;
+		}
+
+		a {
+			color: #0066cc;
+			text-decoration: none;
+		}
+		.content-container {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			}
+
+			.content {
+			flex: 1;
+			margin-right: 50px;
+			}
+
+			.image {
+			max-width: 40%;
+			border-radius: 5px;
+			}
+
+			@media (max-width: 768px) {
+			.content-container {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.content {
+				margin-right: 0;
+			}
+
+			.image {
+				max-width: 100%;
+				margin-top: 20px;
+			}
+			}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TruthCon | TEDxNapierBridge </h1>
+    </header>
+    <nav>
+        <a href="#report">REPORT</a>
+        <a href="#fact-check">FACT CHECK</a>
+        <a href="#harmful-content">HARMFUL CONTENT</a>
+        <a href="#cyber-crime">CYBER CRIME</a>
+        <a href="#deep-fake">DEEP FAKE</a>
+        <a href="#adult-sites">ADULT SITES</a>
+        <a href="#educate-self">EDUCATE SELF</a>
+        <a href="#privacy-tools">PRIVACY TOOLS</a>
+    </nav>
+    <main id="report" class="active">
+		<center>
+		  <h4>
+			TruthCon is a TEDxNapier Bridge impact project that explores the world of misinformation by examining its origins, its appeal, and how it spreads - supercharged by AI - and solutions to it.
+	  
+			<br> The microsite developed as part of the project offers citizens solutions in the form of a reporting mechanism to counter misinformation, including deepfakes.
+		  </h4>
+		</center>
+		<hr />
+		<h2 id="report">Report Misinformation through WhatsApp</h2>
+		<div class="content-container">
+		  <div class="content">	
+			  <p>
+				You have the option to send reputable fact-checking organizations (International Fact-Checking Network (IFCN) signatories) in India about potential misinformation. These organizations can then respond by sending you a
+				fact-checking article.
+			  </p>
+			  <ul>
+				<li>Boom Live - <a href="https://wa.me/917700906111" target="_blank">Click Here</a></li>
+				<li>Quint WebQoof - <a href="https://wa.me/919643651818" target="_blank">Click Here</a></li>
+				<li>Times Verified - <a href="https://wa.me/919819888887" target="_blank">Click Here</a></li>
+				<li>Alt News - <a href="https://wa.me/917600011160" target="_blank">Click Here</a></li>
+				<li>India Today - <a href="https://wa.me/917370007000" target="_blank">Click Here</a></li>
+				<li>YouTurn (Tamil) - <a href="https://api.whatsapp.com/send?phone=916369748351&text=Hi%20You%20Turn!" target="_blank">Click Here</a></li>
+			  </ul>
+			
+		  </div>
+		  <img src="whatsapp.png" alt="WhatsApp" class="image" />
+		</div>
+	  </main>
+    <main id="fact-check">
+        <h2 id="fact-check">Do it yourself fact-check</h2>
+        <div class="content-container">
+			<div class="content">	
+            <p>When using Google's Fact Check Explorer to search for a topic, you can easily find fact checks conducted by independent organizations from around the world - <a href="https://toolbox.google.com/factcheck/explorer/search" target="_blank">Click Here</a></p>
+            <h2>Fact-Checking Organizations in India</h2>
+            <p>Access Fact-checks: There are established fact-checking organizations in India, you can access fact-check easily through their web portal. The following are organizations</p>
+            <ul>
+                <li>Boom Live - <a href="https://www.boomlive.in/fact-check" target="_blank">Click Here</a></li>
+                <li>AFP - <a href="https://factcheck.afp.com/afp-india" target="_blank">Click Here</a></li>
+                <li>Factly - <a href="https://factly.in/category/english/" target="_blank">Click Here</a></li>
+                <li>Quint WebQoof - <a href="https://www.thequint.com/news/webqoof" target="_blank">Click Here</a></li>
+                <li>Alt News - <a href="https://www.altnews.in/" target="_blank">Click Here</a></li>
+                <li>India Today - <a href="https://www.indiatoday.in/fact-check" target="_blank">Click Here</a></li>
+                <li>YouTurn (Tamil) - <a href="https://youturn.in/" target="_blank">Click Here</a></li>
+            </ul>
+		</div>
+		<img src="fact.png" alt="fact-check" class="image" /></div>
+    </main>
+	<main id="harmful-content">
+		<h2 id="harmful-content">Reporting Harmful Content Online</h2>
+		<div class="content-container timeline">
+		  <div class="content column">
+			<p>You can submit reports on specific platforms, about the following harms:</p>
+			<ol>
+			  <li>Threats</li>
+			  <li>Impersonation</li>
+			  <li>Bullying & Harassment</li>
+			  <li>Self-harm or Suicide</li>
+			  <li>Online Abuse Violent Content</li>
+			</ol>
+		  </div>
+		  <div class="column">
+			<ul>
+			  <li>Reporting to Facebook - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/facebook/no/" target="_blank">Click Here</a></li>
+			  <li>Reporting to Instagram - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/instagram/no/" target="_blank">Click Here</a></li>
+			  <li>Report to SnapChat - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/snapchat/no/" target="_blank">Click Here</a></li>
+			  <li>Report to X (Twitter) - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/twitter/no/" target="_blank">Click Here</a></li>
+			  <li>Report to YouTube - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/youtube/no/" target="_blank">Click Here</a></li>
+			  <li>Report to LinkedIn - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/linkedin/no/" target="_blank">Click Here</a></li>
+			  <li>Report to Google - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/google-search/no/" target="_blank">Click Here</a></li>
+			  <li>Report to Tinder - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/tinder/no/" target="_blank">Click Here</a></li>
+			  <li>Report to Hinge - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/hinge/no/graphic-content/" target="_blank">Click Here</a></li>
+			  <li>Report to Pinterest - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/have-you-reported-it-to-pinterest/please-find-links-below-to-pinterest-s-community-guidelines-and-how-to-report-content/" target="_blank">Click Here</a></li>
+			</ul>
+		  </div>
+		  <img src="social.png" alt="social-media" class="image" />
+		</div>
+	  </main>
+    <main id="cyber-crime">
+        <h2 id="cyber-crime">Reporting Cybercrime</h2>
+        <div class="content-container">
+			<div class="content">	
+            <p>For any form of online distress/harassment on social media platforms, economic fraud, matrimonial fraud, online loan scam, job fraud or in case of online sexual abuse or harassment, report <a href="https://cybercrime.gov.in" target="_blank">here</a> or call <b>1930</b></p>
+            <p>If you receive obscene, threatening content (photos, pictures, abusive words) through messages, emails, or on social networking profiles, or if you want to report a fake account or a hacked account, please reach out to Cyber Wellness Helpline <b>+91 7353107353</b> or visit the website to fill the form - <a href="https://responsiblenetism.org/learn-to-report/" target="_blank">here</a></p>
+        </div>
+		<img src="cybercrime.png" alt="cyber-crime" class="image" /></div>
+
+    </main>
+    <main id="deep-fake">
+        <h2 id="deep-fake">What to do in case you find a deepfake of yourself online?</h2>
+        <div class="content-container">
+			<div class="content">	
+				<h3>Stop Non-Consensual Intimate Image Abuse (Above 18+)</h3>
+				<p>StopNCII.org is a free tool designed to support victims of Non-Consensual Intimate Image (NCII) abuse - <a href="https://stopncii.org/" target="_blank">StopNCII.org</a> | How it works - <a href="https://stopncii.org/how-it-works/" target="_blank">How it works</a></p>
+				<h3>Take it down (Under 18+)</h3>
+				<p>This service is one step you can take to help remove online nude, partially nude, or sexually explicit photos and videos taken before you were 18 - <a href="https://takeitdown.ncmec.org/" target="_blank">Take it down</a></p>
+        </div>
+		<img src="deepfake.png" alt="deep-fake" class="image" /></div>
+    </main>
+    <main id="adult-sites">
+        <h2 id="adult-sites">Reporting to adult sites</h2>
+        <div class="content-container">
+			<div class="content">
+            <h3>Non-consensual sharing of intimate images and videos</h3>
+            <p>If you prefer to report non-consensually uploaded personal images and videos yourself, you can find some content takedown forms below. These are the sites where we see the most content being shared. Most sites will have a route to report content for removal. Look for a heading at the top called 'support' or in the footer of the website called ‘content removal’ or ‘contact us’; they should provide an email address or have a contact form.</p>
+            <p>VPN connection may be required, as these domains are blocked in India</p>
+            <ul>
+                <li><a href="https://www.pornhub.com/content-removal" target="_blank">Pornhub - Click Here</a></li>
+                <li><a href="https://xhamster.com/info/contact" target="_blank">Xhamster - Click Here</a></li>
+                <li><a href="https://info.xvideos.com/takedown" target="_blank">Xvideos - Click Here</a></li>
+                <li><a href="https://info.xnxx.com/contact" target="_blank">Xnxx - Click Here</a></li>
+            </ul>
+        </div>
+		<img src="adult.png" alt="adult" class="image" /></div>
+
+    </main>
+    <main id="educate-self">
+        <h2 id="educate-self">Useful links to educate yourself on Misinformation</h2>
+        <div class="content-container">
+			<div class="content">
+            <ul>
+                <li>How our brain reacts to misinformation - <a href="https://fakeless.org/wp-content/uploads/2023/08/How-our-braine-works_CURVES_132x84cm_RGB_english-2.pdf" target="_blank">Click Here</a></li>
+                <li>Breaking news checklist - <a href="https://newslit.org/wp-content/uploads/2023/12/Breaking-News_Infographic_FINAL.pdf" target="_blank">Click Here</a></li>
+                <li>How to avoid falling for misinformation, AI images on social media - <a href="https://www.washingtonpost.com/technology/2023/05/22/misinformation-ai-twitter-facebook-guide/" target="_blank">Click Here</a></li>
+                <li>Five steps for vetting a news source - <a href="https://newslit.org/wp-content/uploads/2022/12/IsItLegit_infographic.pdf" target="_blank">Click Here</a></li>
+                <li>10 characteristics of misinformation - <a href="https://fakeless.org/wp-content/uploads/2023/08/10persones_curves_rgb_English.pdf" target="_blank">Click Here</a></li>
+                <li>How to stay protected against AI voice cloning scams - <a href="https://drive.google.com/file/d/12uzzxH1FoaSDKGImN8tP3P_Uh8aDwJm5/view?usp=sharing" target="_blank">Click Here</a></li>
+            </ul>
+        </div>
+		<img src="educate.png" alt="educate" class="image" /></div>
+    </main>
+    <main id="privacy-tools">
+        <h2 id="privacy-tools">Privacy Tools</h2>
+        <div class="content-container">
+			<div class="content">
+            <ul>
+                <li>Find and privacy-respecting alternatives to popular software and services - <a href="https://awesome-privacy.xyz/" target="_blank">Click Here</a></li>
+                <li>Checklist and guide to securing your digital life and protecting your privacy - <a href="https://digital-defense.io/checklist/" target="_blank">Click Here</a></li>
+                <li>Check if your email address is in a data breach - <a href="https://haveibeenpwned.com/" target="_blank">Click Here</a></li>
+                <li>Secure email, vpn, password manager - <a href="https://proton.me/" target="_blank">Click Here</a></li>
+            </ul>
+        </div>
+		<img src="privacy.png" alt="privacy" class="image" /></div>
+    </main>
+    <footer>
+        <p> &copy; This microsite is made by TEDxNapier Bridge - Follow us <a href="https://twitter.com/newsofchennai" target="_blank">Instagram</a> & <a href="https://www.instagram.com/newsofchennai/" target="_blank">Twitter</a> for more information and upcoming ideas.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll("nav a");
+            const mainSections = document.querySelectorAll("main");
+
+            navLinks.forEach((link) => {
+                link.addEventListener("click", () => {
+                    const target = link.getAttribute("href").substring(1);
+                    mainSections.forEach((section) => {
+                        if (section.id === target) {
+                            section.classList.add("active");
+                        } else {
+                            section.classList.remove("active");
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
