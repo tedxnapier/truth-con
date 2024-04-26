@@ -123,42 +123,8 @@
             TruthCon is a TEDxNapier Bridge impact project that explores the world of misinformation by examining its origins, its appeal, and how it spreads—supercharged by AI. The microsite developed as part of the project offers citizens solutions in the form of a reporting mechanism to counter misinformation, including deepfakes.
         </div><br>
     
-    <div class="audio-guide">
-        <h5><u>Audio guide to TruthCon Exhibition</u></h5>
-        <p>Hello, this is an audio guide for the attendees of TruthCon Exhibition. It will be available on this website until April 28th at 7:00 PM. If you would like to attend the exhibition for free, <a href="https://bit.ly/truthcon-tedx">please get your passes here</a></p>
-               
-        
-        <div class="dropdown"><img src="volume-up.svg" alt="Audio guide"> 
-          <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="audioGuideDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-            Select audio
-          </button> -->
-          <!-- <ul class="dropdown-menu" aria-labelledby="audioGuideDropdown">
-            <li><button class="btn btn-primary" data-audio="audio/Intro.mp3">Introduction - Welcome to TruthCon</a></li>
-            <li><a class="dropdown-item" href="#" data-audio="audio/Timeline.mp3">Timeline - History of Misinformation</a></li>            
-            <li><a class="dropdown-item" href="#" data-audio="audio/Psycholgy.mp3">Psychology behind Misinformation</a></li>            
-            <li><a class="dropdown-item" href="#" data-audio="audio/Deepfakes.mp3">Deepfakes - Impact of AI</a></li>
-            <li><a class="dropdown-item" href="#" data-audio="audio/Solutions.mp3">Solutions: Tackling Misinformation </a></li>
-          </ul> -->
-          <div class="audio-container" onclick="toggleDropdown()">
-            <!-- <img src="volume-up.svg" alt="Audio Icon">
-            <img src="player_icon.png" alt="Player Icon" id="playerIcon" style="display: none;"> -->
-            <span>Audio Guide</span>
-        </div>
-
-          <div class="dropdown" id="audioDropdown">
-            <select onchange="playAudio(this.value)">
-                <option value="" selected disabled hidden>Select Audio</option>
-                <option value="audio/Intro.mp3">Introduction - Welcome to TruthCon</option>
-                <option value="audio/Timeline.mp3">Timeline - History of Misinformation</option>
-                <option value="audio/audio/Psycholgy.mp3">Psychology behind Misinformation</option>
-                <option value="audio/Timeline.mp3">Deepfakes - Impact of AI</option>
-                <option value="audio/Timeline.mp3">Solutions: Tackling Misinformation</option>
-                <!-- Add more options as needed -->
-            </select>
-        </div>
-        </div>
-      </div>
-    </center><hr/>
+    
+    </center>
     <div class="accordion" id="myAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
@@ -298,6 +264,23 @@
             </div>
         </div>
     </div> <hr/>
+    <center>
+    <div class="audio-guide">
+        <div id="headingTedx">Audio Guide - TruthCon Exhibition</div><br>
+        <p style="font-size: 1rem;font-style: italic;">Below is the guide for attendees of TruthCon Exhibition. It will be available on this website until April 28th at 7:00 PM. If you would like to attend the exhibition for free, <a href="https://bit.ly/truthcon-tedx">please get your passes here</a></p>
+        
+        <div class="dropdown">
+          <select id="headingTedx" onchange="playAudio(this.value)">
+            <option value="" selected disabled hidden>Select Audio</option>
+            <option value="audio/Intro.mp3">1. Introduction - Welcome to TruthCon</option>
+            <option value="audio/Timeline.mp3">2. Timeline - History of Misinformation</option>
+            <option value="audio/Psycholgy.mp3">3. Psychology behind Misinformation</option>
+            <option value="audio/Deepfakes.mp3">4. Deepfakes - Impact of AI</option>
+            <option value="audio/Solutions.mp3">5. Solutions: Tackling Misinformation</option>
+          </select>
+        </div>
+    </div>
+    </center><hr/>
     <footer>
         <p> This microsite is made by <a href="https://www.tedxnapierbridge.com/" target="_blank">TEDxNapier Bridge</a> - Follow us <a href="https://instagram.com/tedxnapier" target="_blank">Instagram</a> & <a href="https://www.twitter.com/tedxnapier/" target="_blank">Twitter</a> for more information.</p>
     </footer>
@@ -321,59 +304,16 @@
             document.getElementById(myAccordion).style.background='black';
         }
     });
-//     const player = new YT.Player('audio-player', {
-//   height: 0,
-//   width: 0,
-//   playerVars: {
-//     autoplay: 1,
-//     controls: 0,
-//     showinfo: 0,
-//     modestbranding: 1,
-//     loop: 1,
-//     fs: 0,
-//     cc_load_policy: 0,
-//     iv_load_policy: 3,
-//     autohide: 1
-//   },
-//   events: {
-//     onReady: function (event) {
-//       event.target.mute();
-//     }
-//   }
-// });
-
-// const audioGuideDropdown = document.getElementById('audioGuideDropdown');
-// const audioGuideDropdownItems = audioGuideDropdown.getElementsByClassName('dropdown-item');
-
-// for (let i = 0; i < audioGuideDropdownItems.length; i++) {
-//   audioGuideDropdownItems[i].addEventListener('click', function (event) {
-//     event.preventDefault();
-//     const audioUrl = this.getAttribute('data-audio');
-//     player.loadVideoById(audioUrl.split('v=')[1]);
-//   });
-// }
-
-var currentAudio = null;
-
-function toggleDropdown() {
-    var dropdown = document.getElementById("audioDropdown");
-    if (dropdown.style.display === "none") {
-        dropdown.style.display = "block";
-    } else {
-        dropdown.style.display = "none";
-    }
-}
-
-function playAudio(audioSrc) {
-    if (currentAudio !== null) {
+    //audio guide
+    var currentAudio = null;
+    
+    function playAudio(audioSrc) {
+        if (currentAudio!== null) {
         currentAudio.pause();
-        document.getElementById("playerIcon").style.display = "none"; // Hide player icon when audio stops
+        }
+        currentAudio = new Audio(audioSrc);
+        currentAudio.play();
     }
-    currentAudio = new Audio(audioSrc);
-    currentAudio.play();
-    document.getElementById("playerIcon").style.display = "inline"; // Show player icon when audio plays
-}
-
 </script>
 </body>
 </html>                            
